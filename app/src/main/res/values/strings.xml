@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_snake_left">|</string>
+    <string name="title_snake_middle"> SNAKE </string>
+    <string name="title_snake_right">|</string>
+    <string name="title_activity_classic_snake">Classic Snake</string>
+    <string name="title_activity_no_walls_snake">No Walls Snake</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_no_walls_score">No Walls Score</string>
+    <string name="title_activity_classic_score">Classic Score</string>
+    <string name="title_activity_bomb_snake">Bomb Snake</string>
+    <string name="title_activity_bomb_score">Bomb Score</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-6593579486793864/2019608639</string>
+
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bomb_score_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.anshdeep.snake.BombScore">
+
+    <TextView
+        android:id="@+id/gameover_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gameover_left"
+        android:layout_alignBottom="@+id/gameover_left"
+        android:layout_centerHorizontal="true"
+        android:text="GAME OVER"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/gameover_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gameover_middle"
+        android:layout_alignBottom="@+id/gameover_middle"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/gameover_middle"
+        android:text="@string/title_snake_right"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/gameover_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="72dp"
+        android:layout_toLeftOf="@+id/gameover_middle"
+        android:text="@string/title_snake_left"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/player_score"
+        android:layout_alignLeft="@+id/play_again"
+        android:layout_alignTop="@+id/mode_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/menu_options" />
+
+    <TextView
+        android:id="@+id/mode_high_score"
+        android:layout_alignLeft="@+id/gameover_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="75dp"
+        android:background="@mipmap/menu_options" />
+
+    <ImageView
+        android:id="@+id/play_again"
+        android:layout_below="@+id/player_score"
+        android:layout_toLeftOf="@+id/goto_main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/menu_options"/>
+
+    <ImageView
+        android:id="@+id/goto_main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mode_high_score"
+        android:layout_alignTop="@+id/play_again"
+        android:src="@mipmap/menu_options"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBombScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
